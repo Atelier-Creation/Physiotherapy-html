@@ -42,19 +42,38 @@
 	}
 
 	/* Hero Slider Layout JS */
-	const hero_slider_layout = new Swiper('.hero-slider-layout .swiper', {
-		slidesPerView : 1,
-		speed: 1000,
-		spaceBetween: 0,
-		loop: true,
-		autoplay: {
-			delay: 4000,
+const hero_slider_layout = new Swiper('.hero-slider-layout .swiper', {
+	slidesPerView: 1,
+	speed: 1000,
+	spaceBetween: 0,
+	loop: true,
+	effect: 'fade',
+	fadeEffect: {
+		crossFade: true,
+	},
+	autoplay: {
+		delay: 4000,
+	},
+	pagination: {
+		el: '.hero-pagination',
+		clickable: true,
+	},
+	on: {
+		slideChangeTransitionStart() {
+			document.querySelectorAll('.hero-content').forEach(el => {
+				el.classList.remove('fade-in');
+				el.classList.add('fade-out');
+			});
 		},
-		pagination: {
-			el: '.hero-pagination',
-			clickable: true,
-		},
-	})
+		slideChangeTransitionEnd() {
+			document.querySelectorAll('.swiper-slide-active .hero-content').forEach(el => {
+				el.classList.remove('fade-out');
+				el.classList.add('fade-in');
+			});
+		}
+	}
+});
+
 
 	/* testimonial Slider JS */
 	if ($('.testimonial-slider').length) {

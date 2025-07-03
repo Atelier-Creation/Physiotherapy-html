@@ -916,7 +916,20 @@ header.main-header .header-sticky.active{
 	width: 100%;
 	max-width: 610px;
 	z-index: 1;
+	opacity: 1;
+	transition: all 0.8s ease;
 }
+
+.hero-content.fade-in {
+	opacity: 1;
+	transform: translateY(0%);
+}
+
+.hero-content.fade-out {
+	opacity: 0;
+	transform: translateY(10%);
+}
+
 
 .hero-content .section-title h1{
 	color: var(--white-color);
@@ -2710,7 +2723,7 @@ footer.main-footer{
 	left: 0;
 	bottom: 50px;
 	width: 55%;
-	background: linear-gradient(90deg, #10455F 9.97%, #023047 100%);
+	background: linear-gradient(90deg, #024743 9.97%, #002d2a 100%);
 	border-radius: 50px 0 0 0;
 	padding: 15px;
 	padding-left: calc(((100vw - 1300px) / 2) - 0px);
