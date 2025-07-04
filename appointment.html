@@ -586,6 +586,23 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- defaul time and date setter -->
+     <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const now = new Date();
+
+    // Format date as yyyy-mm-dd
+    const date = now.toISOString().split("T")[0];
+    document.getElementById("date").value = date;
+
+    // Format time as HH:MM (24-hour format)
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const time = `${hours}:${minutes}`;
+    document.getElementById("time").value = time;
+  });
+</script>
+
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
