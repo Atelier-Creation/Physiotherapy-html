@@ -2320,7 +2320,7 @@ footer.main-footer{
 }
 
 .footer-links{
-	width: calc(33% - 66.66px);
+	width: calc(36% - 66.66px);
 }
 
 .footer-links h3{
@@ -2378,7 +2378,7 @@ footer.main-footer{
 }
 
 .footer-links.service-links{
-	width: calc(50% - 66.66px);
+	width: calc(33% - 92.66px);
 }
 
 .footer-links.social-links{
@@ -2409,11 +2409,11 @@ footer.main-footer{
 }
 
 .footer-links.working-links{
-	width: calc(60% - 66.66px);
+	width: calc(33% - 66.66px);
 }
 
 .footer-links.footer-contact-details{
-	width: calc(40% - 66.66px);
+	width: calc(40% - 6.66px);
 }
 
 .footer-contact-box{
@@ -2439,10 +2439,10 @@ footer.main-footer{
 }
 
 .footer-info-box-content{
-	width: calc(100% - 30px);
+	width: calc(100% - 10px);
 }
 
-.footer-info-box-content p{
+.footer-info-box-content p a{
 	color: var(--white-color);
 	margin-bottom: 0;
 }
