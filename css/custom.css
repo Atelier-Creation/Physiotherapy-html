@@ -6662,3 +6662,41 @@ footer.main-footer{
         font-size: 30px;
 	}
 }
+
+/* css for floating icon starts here */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 999;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.164);
+  transition: transform 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1);
+  background-color: #1ebea5;
+}
+
+.floating-whatsapp img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.floating-whatsapp {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+/* css for floating icon ends here */
