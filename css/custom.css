@@ -6700,3 +6700,82 @@ footer.main-footer{
   100% { transform: scale(1); }
 }
 /* css for floating icon ends here */
+
+/* Css added for readmore button on Service pages */
+ .read-more-container {
+    position: relative;
+    max-width: 600px;
+  }
+
+  .read-more-text {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .read-more-toggle {
+    color: #0a5ecb;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 4px;
+  }
+
+  input[type="checkbox"]:checked ~ .read-more-text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  input[type="checkbox"]:checked ~ .read-more-toggle::before {
+    content: "Read less";
+  }
+
+  .read-more-toggle::before {
+    content: "Read more";
+  } .read-more-container {
+    position: relative;
+    max-width: 600px;
+  }
+
+  .read-more-text {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .read-more-toggle {
+    color: #0a5ecb;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 4px;
+  }
+
+  input[type="checkbox"]:checked ~ .read-more-text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  input[type="checkbox"]:checked ~ .read-more-toggle::before {
+    content: "Read less";
+  }
+
+  .read-more-toggle::before {
+    content: "Read more";
+  }
