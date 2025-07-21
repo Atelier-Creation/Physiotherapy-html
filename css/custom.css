@@ -573,6 +573,7 @@ header.main-header .header-sticky.active{
 .navbar{
 	padding: 20px 0;
 	background-color: var(--white-color);
+	border-radius: 50px 50px 0 0;
 	align-items: center;
 }
 
