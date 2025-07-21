@@ -92,6 +92,9 @@ figure{
 img{
 	max-width: 100%;
 }
+.navbar-brand img{
+	height: 60px;
+}
 
 a{
 	text-decoration: none;
@@ -569,6 +572,7 @@ header.main-header .header-sticky.active{
 
 .navbar{
 	padding: 20px 0;
+	background-color: var(--white-color);
 	align-items: center;
 }
 
@@ -596,7 +600,7 @@ header.main-header .header-sticky.active{
 	font-size: 16px;
 	font-weight: 500;
 	padding: 14px 15px !important;
-	color: var(--white-color);
+	color: var(--accent-color);
 	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
 }
@@ -1176,7 +1180,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-us-images .about-circle-logo img{
-	max-width: 85px;
+	max-width: 150px;
 	transition: all 0.4s ease-in-out;
 }
 
